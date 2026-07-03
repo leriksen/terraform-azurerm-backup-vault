@@ -10,7 +10,8 @@ The `azurerm` provider (4.x) does not expose `soft_delete_enabled`, `retention_d
 
 ```hcl
 module "backup_vault" {
-  source = "leriksen/backup-vault/azurerm"
+  source  = "app.terraform.io/leif-lab3/terraform-azurerm-backup-vault/azurerm"
+  version = "0.1.0"
 
   name                = "bvault-prod"
   resource_group_name = "rg-backup"
